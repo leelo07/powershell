@@ -1,0 +1,2 @@
+# Get-ClusterResource -Cluster psclbosqlp01w | Where-Object {$_.ownergroup -like "SQL Server*"} | Sort-Object -Property ownergroup | Format-Table -AutoSize
+Get-ClusterResource -Cluster psclbosqlp01w | Where-Object {$_.state -eq "Offline"} | Sort-Object -Property ownergroup | Format-Table -AutoSize

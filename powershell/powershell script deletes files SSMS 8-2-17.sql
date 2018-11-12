@@ -1,0 +1,1 @@
+EXEC xp_cmdshell 'FORFILES /p g:\sqlbackup\db1\bhnegiftcard\log\ /s /m DB1_*.trn /d -1 /c "CMD /C del /Q /F @FILE"'
